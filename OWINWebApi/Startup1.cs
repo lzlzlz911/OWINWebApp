@@ -6,7 +6,6 @@ using System.Web.Http;
 
 namespace OWINWebApi
 {
-
     public class Startup1
     {
         public void Configuration(IAppBuilder app)

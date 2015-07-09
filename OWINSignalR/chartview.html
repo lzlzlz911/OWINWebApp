@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<!--http://www.cnblogs.com/shanyou/archive/2012/07/28/2613693.html-->
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery.signalR-2.1.2.js"></script>
+
+    <script src="/signalr/hubs"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(
+            function() {
+                var hub = jQuery.connection.bugsHub;
+                hub.client.RecMessage = function(message) {
+                    jQuery('<div />').text(message);
+                    $('#discussion').append('<li><strong>' + message + '</strong></li>');
+                }
+
+                jQuery("#sendmessage").click(function() {
+                    alert('1');
+                    hub.server.ogChart(jQuery("#message").val());
+                });
+
+                jQuery.connection.hub.start();
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <input type='text' id='message' />
+        <input type='button' id='sendmessage' value='Send' />
+        <input type='hidden' id='displayname' />
+        <ul id='discussion'>
+        </ul>
+    </div>
+</body>
+</html>

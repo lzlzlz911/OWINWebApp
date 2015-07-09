@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWINWebApi", "OWINWebApi\OW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWINNancy", "OWINNancy\OWINNancy.csproj", "{B05AEACD-F601-413A-80A8-04E4B857EAB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWINSignalR", "OWINSignalR\OWINSignalR.csproj", "{28F370D7-33B7-4014-AED0-10F5A4356C26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{B05AEACD-F601-413A-80A8-04E4B857EAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B05AEACD-F601-413A-80A8-04E4B857EAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B05AEACD-F601-413A-80A8-04E4B857EAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F370D7-33B7-4014-AED0-10F5A4356C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F370D7-33B7-4014-AED0-10F5A4356C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F370D7-33B7-4014-AED0-10F5A4356C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F370D7-33B7-4014-AED0-10F5A4356C26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
